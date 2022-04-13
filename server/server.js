@@ -15,4 +15,6 @@ app.use('/api/spotify', spotifyRoutes)
 
 const PORT = process.env.PORT
 
+console.log('asd')
+
 app.listen(PORT, console.log(`Server running on PORT ${PORT}`))
