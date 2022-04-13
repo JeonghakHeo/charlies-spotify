@@ -1,7 +1,0 @@
-clean up trees
-
-login -> get token -> open App
-
-login: OAuth2.0 process
-click on Login -> getRedirectUrl -> redirect to spotify login -> logged in -> response back with code and state -> getToken -> exchange code with token -> store in localStorage -> open App
-
