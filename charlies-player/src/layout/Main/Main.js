@@ -13,7 +13,6 @@ import {
   getMyProfile,
   getArtistInfo,
 } from '../../redux/actions/actions'
-import connectPlayer from '../../redux/actions/connectPlayer'
 
 const Main = () => {
   const myProfile = useSelector((state) => state.myProfile)

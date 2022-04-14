@@ -1,5 +1,5 @@
 import './Playlists.css'
-import React, { useState } from 'react'
+import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { makeStyles } from '@mui/styles'
 import moment from 'moment'
@@ -9,11 +9,7 @@ import Typography from '@mui/material/Typography'
 import Tooltip from '@mui/material/Tooltip'
 import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown'
-import Collapse from '@mui/material/Collapse'
 import FavoriteIcon from '@mui/icons-material/Favorite'
-import List from '@mui/material/List'
-import ListItem from '@mui/material/ListItemText'
-import ListItemButton from '@mui/material/ListItemButton'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
 import PlayCircleIcon from '@mui/icons-material/PlayCircle'
 import PauseCircleIcon from '@mui/icons-material/PauseCircle'
@@ -50,8 +46,6 @@ const Playlists = () => {
   const classes = useStyle()
 
   const dispatch = useDispatch()
-
-  const [menuOpen, setMenuOpen] = useState(false)
 
   const playlist = useSelector((state) => state.playlist)
   const { playlistInfo, loading } = playlist
@@ -149,36 +143,6 @@ const Playlists = () => {
                 onClick={openMenu}
               />
             </Box>
-            {/* <Collapse in={menuOpen} timeout='auto' unmountOnExit>
-              <List
-                disablePadding
-                sx={{
-                  position: 'absolute',
-                  width: '170px',
-                  top: '405px',
-                  left: '230px',
-                  backgroundColor: '#282828',
-                  borderRadius: '3px',
-                }}
-              >
-                <ListItem>
-                  <ListItemButton
-                    disableRipple
-                    sx={{
-                      borderRadius: '3px',
-                      margin: '5px 5px',
-                      '&:hover': {
-                        backgroundColor: '#3e3e3e',
-                      },
-                    }}
-                  >
-                    <Typography color='white' variant='body2'>
-                      Liked Songs
-                    </Typography>
-                  </ListItemButton>
-                </ListItem>
-              </List>
-            </Collapse> */}
           </Grid>
         </Grid>
       </Box>
