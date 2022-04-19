@@ -2,7 +2,7 @@
 
 > Thank you so much for your time and coming to see my first full-stack web application on my github page. Any comments or feedbacks would be very much appreciated!
 
-## App Description (Currently Deployment stage)
+## App Description (Currently on Deployment stage)
 
 This app is a mini version of Spotify app that can play songs based on a user's followed playslists. Users can play songs, change playlists, contol the music player, change volume, like a song and etc.
 
