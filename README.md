@@ -34,7 +34,7 @@ This will open up the react app on your local machine.
 
 ## To Run Server
 
-Second, similar to the first step, _open up a new terminal_ and type the following commands to install the dependencies that sever-side needs
+Second, similar to the first step, open up _a new terminal_ and type the following commands to install the dependencies that sever-side needs
 
 (_If you are not on the root directory but in a react app side currently, which defines like "path/Charlies-player/charlies-player", then type cd .. and cd server. Type pwd in your terminal to check where you are currently at now_).
 
