@@ -8,6 +8,9 @@ This app is a mini version of Spotify app that can play songs based on a user's 
 
 There are two top level directories tn the app, which are 'charlies-player' and 'server' that represent frontend and backend respectively.
 
+## DEMO
+![Uploading Demo.gif…]()
+
 ## _Disclaimer_
 
 This app requires a Spotify premium account in order to fully function. Feel free to contact me on jeonghak4142@gmail.com for a demo trial of the app if you don't have a premium account.
