@@ -69,3 +69,9 @@ SPOTIFY_CLIENT_SECRET = your spotify client secret
 
 _Further information on How to get or find Spotify Client ID and Spotify Client Secret_
 https://developer.spotify.com/documentation/general/guides/authorization/app-settings
+
+## Contact Me
+Please feel free to contact me for any matters via my email.
+My email: jeonghak4142@gmail.com
+
+Thank you!
