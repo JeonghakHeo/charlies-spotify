@@ -1,6 +1,6 @@
 # Charlie's Spotify
 
-> Thank you so much for your time and comming to see my first full-stack web application on my github page. Any comments or feedbacks would be very much appreciated!
+> Thank you so much for your time and coming to see my first full-stack web application on my github page. Any comments or feedbacks would be very much appreciated!
 
 ## App Description (Currently Deployment stage)
 
