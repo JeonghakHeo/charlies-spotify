@@ -8,7 +8,7 @@ This app is a mini version of Spotify app that can play songs based on a user's 
 
 There are two top level directories in the app, which are 'charlies-player' and 'server' that represent frontend and backend respectively.
 
-## DEMO
+## Demo
 https://user-images.githubusercontent.com/68264328/163965742-f9a26856-1dcc-44a7-a076-f61b8ce0dba5.mp4
 ## _Disclaimer_
 
