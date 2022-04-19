@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Charlie's Spotify
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Thank you so much for your time and comming to see my first full-stack web application on my github page. Any comments or feedbacks would be very much appreciated!
 
-## Available Scripts
+## App Description
 
-In the project directory, you can run:
+This app is a mini version of Spotify app that can play songs based on a user's followed playslists. Users can play songs, change playlists, contol the music player, change volume, like a song and etc.
 
-### `npm start`
+There are two top level directories tn the app, which are 'charlies-player' and 'server' that represent frontend and backend respectively.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## _Disclaimer_
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This app requires a Spotify premium account in order to fully function. Feel free to contact me on jeonghak4142@gmail.com for a demo trial of the app if you don't have a premium account.
 
-### `npm test`
+## To Run React App
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+First, open up your termnial and type the followings to install all the modules and dependencies that the app requires:
 
-### `npm run build`
+```
+cd 'charlies-player'
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Once all the dependencies are installed successfully, type the following commands to start the react app:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm run start
+```
 
-### `npm run eject`
+This will open up the react app on your local machine.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## To Run Server
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Second, similar to the first step, _open up a new terminal_ and type the following commands to install the dependencies that sever-side needs
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+(_If you are not on the root directory but in a react app side currently, which defines like "path/Charlies-player/charlies-player", then type cd .. and cd server. Type pwd in your terminal to check where you are currently at now_).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+cd server
 
-## Learn More
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Once all the dependencies are installed successfully, type the following command to start the server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+nodemon server
+```
 
-### Code Splitting
+## Environment Variables (Credentials)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+At this point, the app should technically be running yet, it is missing some envrionment variables (credentials) for the app to run without any glitches, errors or unexpected behaviors.
 
-### Analyzing the Bundle Size
+To cope with this, in server folder, go to .env.env file.
+Rename ".env.env" to ".env" and update values/settings to your own to:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+NODE_ENV = development
 
-### Making a Progressive Web App
+PORT = 5000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+MY_USER_ID = your spotify user id
 
-### Advanced Configuration
+SPOTIFY_CLIENT_ID = your spotify client id
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+SPOTIFY_CLIENT_SECRET = your spotify client secret
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+_Further information on How to get or find Spotify Client ID and Spotify Client Secret_
+https://developer.spotify.com/documentation/general/guides/authorization/app-settings
