@@ -6,7 +6,7 @@
 
 This app is a mini version of Spotify app that can play songs based on a user's followed playslists. Users can play songs, change playlists, contol the music player, change volume, like a song and etc.
 
-There are two top level directories tn the app, which are 'charlies-player' and 'server' that represent frontend and backend respectively.
+There are two top level directories in the app, which are 'charlies-player' and 'server' that represent frontend and backend respectively.
 
 ## DEMO
 ![Demo](https://user-images.githubusercontent.com/68264328/163959297-76786839-0ef2-4e07-9be4-83e68ac8c3c7.gif)
