@@ -5,7 +5,6 @@ import Spinner from '../components/utils/Spinner/Spinner'
 import Navbar from '../components/Navbar/Navbar'
 import PlaylistInfo from '../components/PlaylistInfo/PlaylistInfo'
 // import Playlists from '../components/Playlists/Playlists'
-const Playlists = React.lazy(() => import('../components/Playlists/Playlists'))
 import Player from '../components/Player/Player'
 import {
   getPlaylistInfo,
@@ -14,6 +13,7 @@ import {
   getMyProfile,
   getArtistInfo,
 } from '../../redux/actions/actions'
+const Playlists = React.lazy(() => import('../components/Playlists/Playlists'))
 
 const Main = () => {
   const myProfile = useSelector((state) => state.myProfile)
