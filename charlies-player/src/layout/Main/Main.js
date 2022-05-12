@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, Suspense } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import './Main.css'
 import Spinner from '../components/utils/Spinner/Spinner'
 import Navbar from '../components/Navbar/Navbar'
 import PlaylistInfo from '../components/PlaylistInfo/PlaylistInfo'
-import Playlists from '../components/Playlists/Playlists'
+// import Playlists from '../components/Playlists/Playlists'
+const Playlist = React.lazy(() => import('../components/Playlists/Playlists'))
 import Player from '../components/Player/Player'
 import {
   getPlaylistInfo,
@@ -63,7 +64,9 @@ const Main = () => {
               </div>
             </div>
             <div className='playlist-playlist'>
-              <Playlists />
+              <Suspense fallback={<div>Loading...</div>}>
+                <Playlists />
+              </Suspense>
             </div>
             <div className='playlist-player'>
               <hr
