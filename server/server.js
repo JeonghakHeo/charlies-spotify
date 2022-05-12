@@ -28,6 +28,7 @@ if (process.env.NODE_ENV === 'production') {
       path.resolve(
         path.join(__dirname, '../'),
         'charlies-player',
+        'charlies-player',
         'build',
         'index.html'
       )
