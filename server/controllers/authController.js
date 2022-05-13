@@ -14,7 +14,7 @@ export const requestUserAuthorization = (req, res) => {
     response_type: 'code',
     client_id: spotifyClientId,
     scope: scope,
-    redirect_uri: 'https://charlies-spotify.herokuapp.com//auth/callback',
+    redirect_uri: 'https://charlies-spotify.herokuapp.com/auth/callback',
     state: state,
   })
 
