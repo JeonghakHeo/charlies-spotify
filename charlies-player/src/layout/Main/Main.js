@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, lazy, Suspense } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import './Main.css'
 import Spinner from '../components/utils/Spinner/Spinner'
-import Navbar from '../components/Navbar/Navbar'
-import PlaylistInfo from '../components/PlaylistInfo/PlaylistInfo'
-import Playlists from '../components/Playlists/Playlists'
-import Player from '../components/Player/Player'
+// import Navbar from '../components/Navbar/Navbar'
+// import PlaylistInfo from '../components/PlaylistInfo/PlaylistInfo'
+// import Playlists from '../components/Playlists/Playlists'
+// import Player from '../components/Player/Player'
 import {
   getPlaylistInfo,
   getMyLikedSongs,
@@ -13,6 +13,13 @@ import {
   getMyProfile,
   getArtistInfo,
 } from '../../redux/actions/actions'
+
+const Navbar = lazy(() => import('../components/Navbar/Navbar'))
+const PlaylistInfo = lazy(() =>
+  import('../components/PlaylistInfo/PlaylistInfo')
+)
+const Playlists = lazy(() => import('../components/Playlists/Playlists'))
+const Player = lazy(() => import('../components/Player/Player'))
 
 const Main = () => {
   const myProfile = useSelector((state) => state.myProfile)
@@ -52,7 +59,7 @@ const Main = () => {
       artistLoading ? (
         <Spinner />
       ) : (
-        <>
+        <Suspense fallback={<Spinner />}>
           <div className='app'>
             <div className='playlist'>
               <nav className='navbar'>
@@ -77,7 +84,7 @@ const Main = () => {
               <Player />
             </div>
           </div>
-        </>
+        </Suspense>
       )}
     </>
   )

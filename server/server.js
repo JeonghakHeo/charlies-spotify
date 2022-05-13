@@ -16,8 +16,6 @@ app.use('/api/spotify', spotifyRoutes)
 
 const __dirname = path.resolve()
 
-console.log(path.join(__dirname, 'charlies-player/build'))
-
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, 'charlies-player/build')))
 
