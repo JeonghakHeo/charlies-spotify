@@ -21,7 +21,6 @@ export const requestUserAuthorization = (req, res) => {
   res.send({
     redirectUrl:
       'https://accounts.spotify.com/authorize/?' + authQueryParams.toString(),
-    success: true,
   })
 }
 

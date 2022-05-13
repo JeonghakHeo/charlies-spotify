@@ -195,11 +195,7 @@ const Playlists = () => {
         {/* divider */}
         <hr className='divider' style={{ width: '95%' }} />
       </Box>
-      <Box
-        sx={{
-          backgroundColor: '',
-        }}
-      >
+      <Box>
         {/* Each song */}
         <Box sx={{ padding: '0px 30px' }}>
           {!loading &&
