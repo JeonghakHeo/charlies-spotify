@@ -16,22 +16,14 @@ app.use('/api/spotify', spotifyRoutes)
 
 const __dirname = path.resolve()
 
+console.log(path.join(__dirname, 'charlies-player/build'))
+
 if (process.env.NODE_ENV === 'production') {
-  app.use(
-    express.static(
-      path.join(__dirname, '../charlies-player/charlies-player/build')
-    )
-  )
+  app.use(express.static(path.join(__dirname, 'charlies-player/build')))
 
   app.get('*', (req, res) =>
     res.sendFile(
-      path.resolve(
-        path.join(__dirname, '../'),
-        'charlies-player',
-        'charlies-player',
-        'build',
-        'index.html'
-      )
+      path.resolve(__dirname, 'charlies-player', 'build', 'index.html')
     )
   )
 }
